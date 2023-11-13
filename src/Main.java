@@ -96,7 +96,7 @@ public class Main {
             }
         }
         public static void test7_1(){
-            System.out.println("  Задача№7");
+            System.out.println("  Задача№7_1");
 
             int monthDay = 31, weekDay = 7, reportDay = 5;
             String nameDay = null;
@@ -111,6 +111,7 @@ public class Main {
             }
         }
         public static void test7_2(){
+            System.out.println("  Задача№7_2");
             Scanner scanner = new Scanner(System.in);
             System.out.println("Введите количество дней в месяце : ");
             int mothDay = scanner.nextInt();
