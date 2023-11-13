@@ -21,11 +21,8 @@ public class Main {
         HomeWork.test7_1();
         HomeWork.test7_2();
         HomeWork.test8(cometPeriod, startYear, endYear);
-
     }
-
     public static class HomeWork {
-
         public static void test1(int targetSum, int monthlyBudget, int month, int totalSum) {
             System.out.println(" Задача№1");
 
@@ -35,7 +32,6 @@ public class Main {
                 System.out.println("Месяц " + month + " Сумма накоплений равно " + totalSum + " рублей");
             }
         }
-
         public static void test2(int one, int ten) {
             System.out.println("  Задача№2");
 
@@ -45,11 +41,10 @@ public class Main {
             }
             System.out.println();
             one = 1;
-            for (int i = ten; i >= one; i --){
+            for (int i = ten; i >= one; i--) {
                 System.out.print(i + " ");
             }
         }
-
         public static void test3(int population, int totalBirthYears, int one, int ten) {
             System.out.println();
             System.out.println("  Задача№3");
@@ -59,20 +54,21 @@ public class Main {
                 System.out.println("год " + year + " Численность насиление составляет " + population);
             }
         }
-
         public static void test4_5(int targetSumPer, int monthlyBudget, double monthlyPercent, int month, int halfYear, int zero) {
             System.out.println("  Задача№4");
 
             while (monthlyBudget <= targetSumPer) {
                 monthlyBudget += (int) (monthlyBudget * monthlyPercent);
                 month++;
-                    System.out.println("Месяц " + month + " Сумма " + monthlyBudget);
+                System.out.println("Месяц " + month + " Сумма " + monthlyBudget);
             }
             System.out.println("  Задача№5");
 
             targetSumPer = 12_000_000;
             monthlyBudget = 15000;
-            halfYear = 6; zero = 0; month = 0;
+            halfYear = 6;
+            zero = 0;
+            month = 0;
             monthlyPercent = 0.07;
 
             while (monthlyBudget <= targetSumPer) {
@@ -83,8 +79,7 @@ public class Main {
                 }
             }
         }
-
-        public static void test6(int targetSumPer, int monthlyBudget, double monthlyPercent, int totalMonthly, int month,int halfYear, int zero) {
+        public static void test6(int targetSumPer, int monthlyBudget, double monthlyPercent, int totalMonthly, int month, int halfYear, int zero) {
             System.out.println("  Задача№6");
 
             while (month <= totalMonthly) {
@@ -95,22 +90,22 @@ public class Main {
                 }
             }
         }
-        public static void test7_1(){
+        public static void test7_1() {
             System.out.println("  Задача№7_1");
 
             int monthDay = 31, weekDay = 7, reportDay = 5;
             String nameDay = null;
 
-            switch (reportDay){
+            switch (reportDay) {
                 case 5:
                     nameDay = "Пятница";
                     break;
             }
-            for (int day = reportDay; day <= monthDay; day+=weekDay){
-                    System.out.println("Сегодня " + day + " чесло " + nameDay + " надо делать отчет!");
+            for (int day = reportDay; day <= monthDay; day += weekDay) {
+                System.out.println("Сегодня " + day + " чесло " + nameDay + " надо делать отчет!");
             }
         }
-        public static void test7_2(){
+        public static void test7_2() {
             System.out.println("  Задача№7_2");
 
             Scanner scanner = new Scanner(System.in);
@@ -120,7 +115,7 @@ public class Main {
             int reportDay = scanner.nextInt();
             int weekDay = 7;
             String nameDay = null;
-            switch (reportDay){
+            switch (reportDay) {
                 case 1:
                     nameDay = "Понедельник";
                     break;
@@ -145,11 +140,10 @@ public class Main {
                 default:
                     System.out.println("Ошибка! выберите от 1 до 7: ");
             }
-            for (int day = reportDay; day <= mothDay; day+=weekDay){
+            for (int day = reportDay; day <= mothDay; day += weekDay) {
                 System.out.println("Сегодня " + day + " чесло " + nameDay + " надо здать отчет! ");
             }
         }
-
         public static void test8(int cometPeriot, int startYear, int endYear) {
             System.out.println("  Задача№8");
 
