@@ -112,6 +112,7 @@ public class Main {
         }
         public static void test7_2(){
             System.out.println("  Задача№7_2");
+
             Scanner scanner = new Scanner(System.in);
             System.out.println("Введите количество дней в месяце : ");
             int mothDay = scanner.nextInt();
